@@ -1,0 +1,93 @@
+/* 
+    Document   : countdown
+    Created on : 14-gen-2011, 17.07.53
+    Author     : stefan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+
+ */
+
+*{
+    margin:0;
+    padding:0
+}
+
+#countdownwrap{
+    width:100%;
+}
+
+#countdowncontainer{
+    height:125px; 
+    margin:0 auto;
+}
+
+div.set{
+    float:left
+}
+
+h2.counter{
+    font-size: 20px; 
+    text-align: center;
+}
+
+ul.days{
+    list-style-type:none;
+    height:103px;
+    padding:0px 5px 5px
+}
+
+ul.hours{
+    list-style-type: none;
+    height:103px;padding:0px 5px 5px
+}
+
+ul.minutes{
+    list-style-type: none;
+    height:103px;padding:0px 5px 5px}
+
+ul.seconds{
+    list-style-type: none;
+    height: 103px;
+    padding: 0px 5px 5px
+}
+
+li.digit{
+    list-style: none;
+    float: left;
+    background: white url("../img/filmstrip_countdown_9-0.png") no-repeat 0 0; 
+    width:53px; 
+    height:103px
+}
+
+li.digit#s0, li#m0{
+    list-style: none;
+    background:white url("../img/filmstrip_countdown_5-0.png") no-repeat 0 0
+}
+
+li.digit#h0{
+    list-style: none;
+    background:white url("../img/filmstrip_countdown_2-0.png") no-repeat 0 0
+}
+
+li.comma{
+    list-style: none;
+    background:white url("../img/comma.png") no-repeat 2px 75px; 
+    width:12px
+}
+
+div.separator{
+    float:left;
+    height:103px;
+    padding-top:15px;
+    font:40px "BDCartoonShoutRegular", Arial, sans-serif
+}
+
+#counter_copyright{
+    text-align: center; 
+    margin:0 auto;
+}

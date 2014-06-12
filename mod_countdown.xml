@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>Flip-Clock Countdown module</name>
+    <author>Hanjo Hingsen</author>
+    <version>1.0.0</version>
+    <description>MOD_COUNTDOWN_DESCRIPTION</description>
+    
+    <files>
+        <filename module="mod_countdown">mod_countdown.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>assets/css/countdown.css</filename>
+        <filename>assets/js/countdown.js</filename>
+		<filename>assets/img/comma.png</filename>
+		<filename>assets/img/filmstrip_countdown_2-0.png</filename>
+		<filename>assets/img/filmstrip_countdown_5-0.png</filename>
+		<filename>assets/img/filmstrip_countdown_9-0.png</filename>
+    </files>
+	
+    <languages>
+        <language tag="de-DE">de-DE.mod_countdown.ini</language>
+        <language tag="de-DE">de-DE.mod_countdown.sys.ini</language>
+        <language tag="en-GB">en-GB.mod_countdown.ini</language>
+        <language tag="en-GB">en-GB.mod_countdown.sys.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="destinationDate" type="calendar" default="Dec 24,2022" label="MOD_COUNTDOWN_TARGETDATE" description="MOD_COUNTDOWN_TARGETDATE_DESCRIPTION" format="%d.%m.%Y %H:%M" />
+                <field name="loadjQuery" type="radio" default="1" label="MOD_COUNTDOWN_ASK_FOR_JQUERY" description="MOD_COUNTDOWN_ASK_FOR_JQUERY_DESCRIPTION">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="endText" type="input" default="" label="MOD_COUNTDOWN_ENDTEXT" description="MOD_COUNTDOWN_ENDTEXT_DESCRIPTION"/>
+            </fieldset>
+        </fields>
+    </config>
+    
+</extension>
